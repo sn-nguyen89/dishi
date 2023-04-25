@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #f6f6f6;
+    font-family: "Poppins";
+  }
+
+  a:hover{
+    cursor: url('/private/img/cursor2.png'), auto;	
+  }
+
+/*Title*/
+.dishi_title {
+    float: left;
+    padding-top: 15px;
+}
+
+/*Logo*/
+#panda {
+    width: 50px;
+    float: right;
+    padding-top: 5px;
+}
+
+
+
+.container .nav {
+    margin: 0px;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+    float: center;
+    /* padding-left: 25px; */
+    text-align: center;
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("/private/img/menu-alt-right-regular-24.png");
+  }
+  
+  
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+      outline: none;
+      border: none;
+      box-shadow: none;
+  }
+  
+  
+  .navbar-light .navbar-nav .user-details {
+    font-size: 10pt;
+    float: right;
+  padding-top: 10px;
+  }
+  
+  #userGoesHere {
+    font-size: 10pt;
+    float: right;
+  padding-top: 10px;
+  }
+  
+  .nav-label-larger {
+    font-size: 13pt;
+  }
+  
+  .nav-labels {
+    font-size: 7pt;
+  }
+  
+  .nav-item{
+    float: center;
+    border-bottom: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    border-left:
+     1px solid #e3e3e3;
+  }
+  
+  .nav-item:hover{
+  background-color: #e4e4e4;
+  }
+  
+  ul li:hover {
+    background-color: #e4e4e4;
+  }
+  
+  ul li:nth-child(1) {
+    border-top: 1px solid #e3e3e3;
+    background-color: #f0f0f0;
+  }
+  
+  ul li:nth-child(3) {
+    background-color: #f0f0f0;
+  }
+  
+  ul li:nth-child(5) {
+    background-color: #f0f0f0;
+  }
+  
+  ul li:nth-child(7) {
+    font-size: 10pt;
+    float: right;
+  }
+  
+  .bi-facebook, .bi-twitter{
+    margin-bottom: 3px;
+    margin-right: 3px;
+  }
+  
+  .bi-facebook {
+    color:rgb(0, 87, 201);
+  }
+  
+  .bi-twitter {
+    color: rgb(0, 192, 250);
+  }
+
+  #thumbnail_profile {
+    border: 2px solid #09b44d;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+h3 {
+    font-weight: 700;
+  }
+
+/*Account Info*/
+.account_profile {
+    padding-top: 50px;
+}
+
+.account_profile_formatting {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.user_info {
+    margin-bottom: -30px;
+}
+
+/*Size of buttons (Container)*/
+.singleSize {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#profile_pic {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.fixed-bottom {
+    background-color: #09b44d;
+      padding: 5px;
+      font-size: 11pt;
+      line-height: 10px;
+      border-top: 1px solid lightgrey;
+      border-radius: 25px 25px  0px 0px;
+  }
+  
+  .nav-link{
+      color: white;
+  }
+  
+  .fixed-bottom a:hover {
+      color: #d0d0d0;
+  }
+  
+  .active{
+  color: white;
+  text-decoration: underline;
+  }
+  
+  .nav-label-larger {
+      font-size: 13pt;
+  }
+  
+  .nav-labels {
+      font-size: 7pt;
+  }
+
+
+
+  .user-info {
+      text-align: center;
+  }
+
+  .input-fields {
+      max-width: 400px;
+      text-align: center;
+      display: inline-block;
+  }
+
+.input {
+    padding-bottom: 10px;
+}
+
+.password, .addVeri, .addRest{
+    width: 100%;
+    background: #3FC979;
+    border: none;
+}
+
+.password:active {
+    background-color: #25824c;
+}
+
+
+.password:hover {
+    background: #25824c; 
+}
+
+.icon {
+    margin:auto;
+    display: flex;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+    transition: bottom ease 0.5s;
+  }
+  
+  .card:hover {
+    bottom: -4px;
+  }
+
+  .arrow {
+    margin:auto;
+    display: flex;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .black{
+        color: black;
+        text-decoration: none;
+    }
+    
+    .black:hover {
+        color: #d0d0d0;
+    }
+
+
+
+.btn-dark {
+    border-radius: 40px;
+    width: 250px;
+}
+
+.btn-dark:hover {
+    background-color: #3b4249;
+    border: 1px solid #3b4249;
+}
+
+
+.break {
+    padding: 30px;
+}
+
+.break2 {
+    padding: 15px;
+}
+
+.bg-green {
+    background-color: #09b44d;
+}
+
+.restaurant-form {
+    max-width: 700px;
+}
+
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  /* cursor: pointer; */
+  /* background-color: #111; */
+  color: black;
+  margin: auto;
+  border: none;
+}
+
+
+#main {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin-left: 40px;
+  width: 4em;
+  height: 4em;
+  transition: margin-left .5s;
+}
+
+.container1 {
+  padding-top: 4em;
+  
+}
+#mySidebar {
+  background-color: white;
+}
+
+/* @media only screen and (max-width: 500px) {
+  .sidebar {
+    width: 100vw;
+  }
+} */
+
+/* Twitter */
+.twitter_container {
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#tweetText {
+  padding: 5px;
+}
+
+#tweetSubmit {
+  margin-left: 5px;
+  padding: 5px;
+  background-color: #09b44d;
+  color: white;
+  border: 2px solid #09b44d;
+  border-radius: 3px;
+}
+
+#separater {
+  width: 90%;
+  height: 2px;
+  background-color: lightgrey;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* Facebook */
+.fb-comments {
+  text-align: center;
+  /* width: 100%; */
+}
+

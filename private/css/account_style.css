@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:hover {
+    cursor: url('/private/img/cursor2.png'), auto;
+}
+
+/*Header*/
+.dishi_header {
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    background-color: #3FC979;
+    color: white;
+    text-align: center;
+
+}
+
+.dishi_header_container {
+    width: 7em;
+    height: 4em;
+    margin: 0 auto;
+}
+
+/*Title*/
+.dishi_title {
+    float: left;
+    padding-top: 15px;
+}
+
+/*Logo*/
+#panda {
+    width: 50px;
+    float: right;
+    padding-top: 5px;
+}
+
+.dishi_main {
+    padding-top: 5em;
+}
+
+.filter {
+    text-align: center;
+}
+
+/*Navbar*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    bottom: 0;
+    background-color: #3FC979;
+}
+
+.navbar>svg {
+    color: white;
+}
+
+.navbar>svg:nth-child(1) {
+    margin-left: 15px;
+}
+
+.navbar>svg:nth-child(4) {
+    margin-right: 15px;
+}

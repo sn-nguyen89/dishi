@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Dishi Login Page</title>
+
+    <!-- This is the for the log in widget-->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/private/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/private/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/private/img/favicon-16x16.png">
+    <link rel="manifest" href="/private/img/site.webmanifest">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- This is the for the log in widget-->
+    <link rel="stylesheet" href="/private/css/login_style.css">
+    <!-- <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" /> -->
+</head>
+
+<body>
+    <!--Header (Fixed Position)-->
+    <div class="dishi_header">
+        <div class="dishi_header_container">
+            <div class="dishi_title_container">
+                <h3 class="dishi_title">dishi</h3>
+            </div>
+            <div class="dishi_logo_container">
+                <img id="panda"
+                    src="https://image.spreadshirtmedia.com/image-server/v1/mp/designs/1018356588,width=178,height=178/dabbing-panda-giant-panda-bear-dab-dance-tee-dance.png">
+            </div>
+        </div>
+    </div>
+    <div class="header_format"></div>
+    <div class="welcome_blurb">
+        <p>Welcome to <span>dishi</span>! Help us save the world, one dish at a time.</p>
+        <p id="login_info">Login now to get started.</p>
+    </div>
+
+    <div id="firebaseui-auth-container"></div>
+
+    <div id="loader">Loading...</div>
+
+    <!-- Firebase Links  -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+
+    <script src="/private/js/firebase_api_dishi.js"></script>
+    <script src="/private/js/login.js"></script>
+</body>
+
+
+</html>

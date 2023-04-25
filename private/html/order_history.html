@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <!-- Boxicon CSS -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
+
+
+  <link href="/private/css/profile_style.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/private/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/private/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/private/img/favicon-16x16.png">
+  <link rel="manifest" href="/private/img/site.webmanifest">
+
+  <title>My Order History</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light ms-0">
+    <div class="container">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="fb-comments" id="fb_full" data-href="https://dishi-9fa34.web.app/" data-width="230"
+                data-numposts="5">
+            </div>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div id="twitter_full">
+                <div class="twitter_container">
+                    <p>Send a tweet!</p>
+                    <form>
+                        <input type="text" name="tweetText" id="tweetText" />
+                        <input type="submit" value="Submit" id="tweetSubmit" />
+                    </form>
+                    <br>
+                    <div id="tweetBtn">
+                        <a class="twitter-share-button" data-hashtags="dishiTeam28" href="http://twitter.com/share"
+                            data-url="https://dishi-9fa34.web.app/" data-text="Check out dishi at">Tweet
+                        </a>
+                    </div>
+                </div>
+                <div id="separater"></div>
+                <a class="twitter-timeline"
+                    href="https://twitter.com/dishiTeam28/lists/dishi-34025?ref_src=twsrc%5Etfw">A
+                    Twitter List by dishiTeam28</a>
+            </div>
+        </div>
+        <span class="navbar-brand">
+            <h3>My Order History</h3>
+        </span>
+        <button class="navbar-toggler" id="hamburger" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item justify-content-center">
+                    <a class="nav-link" href="/index.html"> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/private/html/about.html"> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="openbtn nav-link" onclick="openFNav()">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        Share on Facebook
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="openbtn nav-link" onclick="openTNav()">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                        Share on Twitter
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/private/html/privacy_policy.html">Privacy Policy</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="logout"> Log Out</a>
+                </li>
+                <li class="last justify-content-end">
+                    <div id="userGoesHere">
+                        <span id="user-details"> </span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <div class="container">
+
+    <!--Account Details-->
+    <div class="dancing-panda"></div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col user-info">
+        <div id="profilepic">
+        </div>
+        <p></p>
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col user-info">
+        <span class="font-weight-bold user_name" id="user_name"></span><br />
+        <span class="text-black-50 user_email" id="user_email"></span>
+      </div>
+    </div>
+<p></p><br />
+    <!-- Displaying Active Orders (restaurants that put dishes up) -->
+    <div id="content1">
+      <h3>Active Orders</h1>
+        <table class="table table-striped table-hover" id="dish_confirmed">
+          <tr></tr>
+        </table>
+    </div>
+    <p></p><br />
+
+    <!-- Displays orders that have been completed -->
+    <div id="content2">
+      <h3>Past Orders</h3>
+        <table class="table table-striped table-hover" id="dish_completed">
+          <tr></tr>
+        </table>
+    </div>
+    <div class="break"></div>
+
+    <!-- Bottom Nav Bar -->
+    <nav class="navbar fixed-bottom nav nav-fill">
+      <!-- <a class="nav-link active" href="#"><i class="fas fa-utensils"></i>  <br><span class="nav-labels">Food</span></a> -->
+      <a class="nav-link" href="/private/html/main.html"
+          ><i class="fas fa-utensils"></i> <br /><span class="nav-labels"
+              >Restaurants</span
+          ></a
+      >
+      <a class="nav-link" href="/private/html/favorite.html"
+      ><i class="bx bxs-heart"></i><br /><span class="nav-labels"
+          >Favourites</span
+      ></a
+  >
+      <a class="nav-link" href="/private/location/locations.html"
+          ><i class='bx bxs-map' ></i><br /><span class="nav-labels"
+              >Locations</span
+          ></a
+      >
+
+      <a class="nav-link" href="/private/html/profile.html"
+          ><i class="bx bxs-user"></i><br /><span class="nav-labels"
+              >Account</span
+          ></a
+      >
+  </nav>
+
+    <!--Scripts-->
+    
+    <script src="/private/js/facebook_sdk.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7fb5f730fc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+      </script>
+
+    <!-- Firebase Links  -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+    <script src="/private/js/firebase_api_dishi.js"></script>
+    <script src="/private/js/order_history.js"></script>
+    <script src="/private/js/logout.js"></script>
+    <script src="/private/js/social.js"></script>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

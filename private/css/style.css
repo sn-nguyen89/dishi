@@ -1,0 +1,227 @@
+.grid-container {
+    display: grid;
+    height: 100vh;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    background-color: #09b44d;
+    height: 20vh;
+}
+
+#avgRating {
+    font-size: large;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#ratingCount {
+    font-size: large;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.top2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #09b44d;
+    height: 20vh;
+    align-items: center;
+}
+
+.allreview-section {
+    height: 80vh;
+}
+
+.sort-review {
+    float: right;
+}
+
+.actual-review {
+    padding-top: 5%;
+}
+
+.review-section {
+    display: grid;
+    height: 80vh;
+}
+
+.review-container {
+    padding: 2%;
+}
+
+.instruction {
+    padding-bottom: 5%;
+}
+
+.go-back {
+    grid-column: 1/2;
+}
+
+.sPage-title {
+    grid-column: 2/3;
+    display: grid;
+    justify-items: center;
+    font-family: Gill Sans, sans-serif;
+    font-size: 31px;
+    font-weight: 1500;
+}
+
+.rating {
+    grid-column: 1/-1;
+    padding-left: 2%;
+}
+
+.item1 {
+    grid-column: 1/-1;
+    justify-items: center;
+}
+
+.restaurant-content {
+    display: grid;
+    grid-column: 1/-1;
+    height: 65vh;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    height: 15vh;
+    background-color: #f6f6f6;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    height: 15%;
+    border-bottom: 1px dashed grey;
+    align-items: center;
+}
+
+.name {
+    display: grid;
+    justify-items: start;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.title {
+    grid-column: 1/-1;
+}
+
+.star {
+    grid-column: 1/-1;
+}
+
+.food-type {
+    grid-column: 1/-1;
+}
+
+.distance {
+    grid-column: 1/2;
+}
+
+.time {
+    grid-column: 2/4;
+}
+
+.submit-button {
+    padding-top: 2%;
+    display: grid;
+    justify-items: end;
+}
+
+.score-star {
+    display: grid;
+    padding: 5% 2% 2% 2%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.average-rating {
+    grid-column: 1/2;
+    display: grid;
+    justify-items: center;
+}
+
+.ratingNumber {
+    grid-column: 3/4;
+    display: grid;
+    justify-items: end;
+}
+
+.seeAllLink {
+    grid-column: 3/4;
+    display: grid;
+    justify-items: end;
+}
+
+.review-box {
+    color: rgb(32, 31, 31);
+    border: solid;
+    padding: 5%;
+    margin: 7%;
+    box-shadow: 10px 10px grey;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 4;
+}
+.reviewTitle {
+    grid-column: 1/2;
+}
+.reviewDate {
+    grid-column: 1/2;
+}
+.reviewStar {
+    grid-column: 1/2;
+}
+.reviewContent {
+    grid-column: 1/2;
+}
+.panda {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: grid;
+    justify-items: end;
+}
+
+/* Star rating */
+/* got it from codepen.io */
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating > input {
+    display: none;
+}
+
+.rating > label {
+    position: relative;
+    width: 1em;
+    font-size: 6vw;
+    color: #ffd600;
+    cursor: pointer;
+}
+
+.rating > label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+    opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before {
+    opacity: 1;
+}
+
+.rating:hover > input:checked ~ label:before {
+    opacity: 0.4;
+}

@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: "Poppins";
+}
+
+
+
+a:hover {
+  cursor: url("/private/img/cursor2.png"), auto;
+}
+
+.banner {
+  width: 100%;
+  background-color: grey;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.fixed-bottom {
+  background-color: #09b44d;
+  padding: 5px;
+  font-size: 11pt;
+  line-height: 10px;
+  border-top: 1px solid lightgrey;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.fixed-bottom a:hover {
+  color: #d0d0d0;
+}
+
+.active {
+  color: white;
+  text-decoration: underline;
+}
+
+.container .nav {
+  margin: 0px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: 500;
+  float: center;
+  /* padding-left: 25px; */
+  text-align: center;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/private/img/menu-alt-right-regular-24.png");
+}
+
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.navbar-light .navbar-nav .user-details {
+  font-size: 10pt;
+  float: right;
+padding-top: 10px;
+}
+
+#userGoesHere {
+  font-size: 10pt;
+  float: right;
+padding-top: 10px;
+}
+
+.nav-label-larger {
+  font-size: 13pt;
+}
+
+.nav-labels {
+  font-size: 7pt;
+}
+
+.nav-item{
+  float: center;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+  border-left:
+   1px solid #e3e3e3;
+}
+
+.nav-item:hover{
+background-color: #e4e4e4;
+}
+
+ul li:hover {
+  background-color: #e4e4e4;
+}
+
+ul li:nth-child(1) {
+  border-top: 1px solid #e3e3e3;
+  background-color: #f0f0f0;
+}
+
+ul li:nth-child(3) {
+  background-color: #f0f0f0;
+}
+
+ul li:nth-child(5) {
+  background-color: #f0f0f0;
+}
+
+ul li:nth-child(7) {
+  font-size: 10pt;
+  float: right;
+}
+
+.bi-facebook, .bi-twitter{
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+
+.bi-facebook {
+  color:rgb(0, 87, 201);
+}
+
+.bi-twitter {
+  color: rgb(0, 192, 250);
+}
+
+#thumbnail_profile {
+  border: 2px solid #09b44d;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.bg-green {
+  background-color: #09b44d;
+}
+
+.break {
+  padding: 35px;
+}
+
+
+
+h3 {
+  font-weight: 700;
+}
+
+.card-overlay {
+  padding-top: 90px;
+  color: white;
+}
+
+.card-img {
+  filter: brightness(80%);
+}
+
+.card-img-overlay {
+  padding-left: 7px;
+  font-size: 14pt;
+}
+
+.card-text {
+  font-size: 9pt;
+}
+
+.card-body {
+  padding: 2px;
+  line-height: 12pt;
+}
+
+.pull-right {
+  float: right;
+}
+
+.cuisine {
+  font-size: 7pt;
+  text-align: center;
+  font-weight: 500;
+}
+
+.no-border {
+  border: none;
+}
+
+.shadowed {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.padding-0-first {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.fixed-top {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.restaurant-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0px 0px 20px;
+  filter: brightness(90%);
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: bottom ease 0.5s;
+}
+
+.card:hover {
+  bottom: -4px;
+}
+
+.card-title {
+  font-size: 12pt;
+}
+
+.card-body {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 22px;
+  font-size: 11pt;
+}
+
+.arrow {
+  margin: auto;
+  display: flex;
+}
+
+.card {
+  cursor: url("/private/img/cursor2.png"), auto;
+}
+
+.time-background {
+  background-color: #e6e6e6;
+}
+
+.fixed-top a {
+  color: white;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 20pt;
+}
+
+.fixed-top {
+  line-height: 25pt;
+}
+
+.food-type {
+  background-color: #09b44d;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.review-count {
+  color: grey;
+}
+
+.offers {
+  font-weight: 500;
+  font-size: 15pt;
+  position: relative;
+  top: 15%;
+}
+
+.btn-dark {
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-size: 9pt;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 6px;
+}
+
+.btn-dark:hover {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  .card-body {
+    padding-left: px;
+    line-height: 18px;
+    font-size: 9pt;
+  }
+
+  .col {
+    margin-top: 3px;
+  }
+
+  .filters {
+    padding-bottom: 10px;
+  }
+
+  .btn-dark {
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 9pt;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 6px;
+  }
+
+
+
+  #restaurants {
+    margin-bottom: 13px;
+  }
+
+  h4 {
+    font-size: 11pt;
+  }
+
+  .restaurant-img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .offers {
+    font-weight: 500;
+    font-size: 15pt;
+    position: relative;
+    top: 10%;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  /* cursor: pointer; */
+  /* background-color: #111; */
+  color: black;
+  margin: auto;
+  border: none;
+}
+
+
+#main {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin-left: 40px;
+  width: 4em;
+  height: 4em;
+  transition: margin-left .5s;
+}
+
+.container1 {
+  padding-top: 4em;
+  
+}
+#mySidebar {
+  background-color: white;
+}
+
+/* @media only screen and (max-width: 500px) {
+  .sidebar {
+    width: 100vw;
+  }
+} */
+
+/* Twitter */
+.twitter_container {
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#tweetText {
+  padding: 5px;
+}
+
+#tweetSubmit {
+  margin-left: 5px;
+  padding: 5px;
+  background-color: #09b44d;
+  color: white;
+  border: 2px solid #09b44d;
+  border-radius: 3px;
+}
+
+#separater {
+  width: 90%;
+  height: 2px;
+  background-color: lightgrey;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/* Facebook */
+.fb-comments {
+  text-align: center;
+  /* width: 100%; */
+}
+
